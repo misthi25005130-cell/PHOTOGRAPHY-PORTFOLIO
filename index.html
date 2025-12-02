@@ -1,0 +1,201 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photography Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav {
+      margin: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #007BFF;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    .gallery-item {
+      background: white;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .gallery-item h3 {
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    form h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Pixel Perfect</h1>
+    <p>Capturing Your Moments Beautifully</p>
+  </header>
+
+  <nav>
+    <a href="#portraits">Portraits</a>
+    <a href="#landscape">Landscape</a>
+    <a href="#events">Events</a>
+    <a href="#booking">Book a Session</a>
+  </nav>
+
+  <div class="container">
+    <section id="portraits">
+      <h2>Portrait Photography</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="https://cdn.expertphotography.com/wp-content/uploads/2019/04/female-face-girl-posing-outdoors-in-natural-light.jpg" alt="Portrait 1" />
+          <h3>Portrait 1</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.stockcake.com/public/a/1/3/a13b303a-a843-48e3-8c87-c0ac0314a282_large/intense-male-portrait-stockcake.jpg" alt="Portrait 2" />
+          <h3>Portrait 2</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://progradedigital.com/wp-content/uploads/2023/04/31-Main-Image.png" alt="Portrait 3" />
+          <h3>Portrait 3</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="landscape">
+      <h2>Landscape Photography</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=648&h=432" alt="Landscape 1" />
+          <h3>Landscape 1</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg" alt="Landscape 2" />
+          <h3>Landscape 2</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://posterjack.ca/cdn/shop/articles/landscape_photography_tips_featured_image.jpg?v=1563408049&width=2048" alt="Landscape 3" />
+          <h3>Landscape 3</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Event Photography</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg" alt="events 1" />
+          <h3>events 1</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://trafft.com/wp-content/uploads/2021/08/photo-1527529482837-4698179dc6ce.jpg" alt="events 2" />
+          <h3>events 2</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://img.freepik.com/free-photo/professional-equipment-camera-tripod-stand-field-front-prepared-table-evening-time_146671-14420.jpg?semt=ais_hybrid&w=740&q=80" alt="events 3" />
+          <h3>events 3</h3>
+        </div>
+      </div>
+    </section>
+
+        <section id="booking">
+      <h2>booking Photography</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiAMP9wP7z57KFBiVYtsvNqBBJasJvruoJtkryMGgyzAS0i2aJNCcPlBcfiZD4Yzbb1DM&usqp=CAU" alt="booking 1" />
+          <h3>booking 1</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://content.jdmagicbox.com/comp/kolkata/y5/033pxx33.xx33.211130102309.v5y5/catalogue/frame-your-moments-mukundapur-kolkata-photographers-0vuv0doni9.jpg" alt="booking 2" />
+          <h3>booking 2</h3>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.idontsaycheese.com/wp-content/uploads/2020/09/booking-clients-wedding-photography.jpg" alt="booking 3" />
+          <h3>booking 3</h3>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
